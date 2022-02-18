@@ -10,10 +10,13 @@ import UIKit
 
 class RoundedButton: CustomButton {
     
-    required init() {
-        super.init()
+    init(title: String, font: UIFont) {
+        super.init(title: title)
+        
         self.clipsToBounds = true
         self.layer.cornerRadius = 10
+        
+        self.titleLabel?.font = font
     }
     
     required init?(coder: NSCoder) {

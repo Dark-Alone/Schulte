@@ -10,13 +10,15 @@ import UIKit
 
 class CustomLabel: UILabel {
     
-    required init() {
+    init(title: String, font: UIFont = .preferredFont(forTextStyle: .body)) {
         super.init(frame: .zero)
         
         self.translatesAutoresizingMaskIntoConstraints = false
         self.textColor = .black
         self.backgroundColor = UIColor(white: 0.9, alpha: 1)
         self.textAlignment = .center
+        
+        self.text = title
     }
     
     required init?(coder: NSCoder) {

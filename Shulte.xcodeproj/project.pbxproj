@@ -13,16 +13,21 @@
 		F184ACEE251079E100C9FCA6 /* Shulte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F184ACEC251079E100C9FCA6 /* Shulte.xcdatamodeld */; };
 		F184ACF0251079E200C9FCA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F184ACEF251079E200C9FCA6 /* Assets.xcassets */; };
 		F184ACF3251079E200C9FCA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F184ACF1251079E200C9FCA6 /* LaunchScreen.storyboard */; };
-		F1EC3903263AADB9004FF93C /* makeTableShulte.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3902263AADB9004FF93C /* makeTableShulte.swift */; };
-		F1EC3907263AB19F004FF93C /* makeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3906263AB19F004FF93C /* makeButtons.swift */; };
+		F1EC3903263AADB9004FF93C /* ShulteVC+makeTableShulte.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3902263AADB9004FF93C /* ShulteVC+makeTableShulte.swift */; };
+		F1EC3907263AB19F004FF93C /* ShulteVC+makeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3906263AB19F004FF93C /* ShulteVC+makeButtons.swift */; };
 		F1EC390C263AC172004FF93C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC390B263AC172004FF93C /* CustomButton.swift */; };
 		F1EC390F263AC2AB004FF93C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC390E263AC2AB004FF93C /* RoundedButton.swift */; };
 		F1EC3912263AC466004FF93C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3911263AC466004FF93C /* CustomLabel.swift */; };
 		F1EC3915263AC4E6004FF93C /* trash.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3914263AC4E6004FF93C /* trash.swift */; };
 		F1EC3918263AC619004FF93C /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3917263AC619004FF93C /* RoundedLabel.swift */; };
-		F1EC391D263B60FC004FF93C /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391C263B60FC004FF93C /* game.swift */; };
-		F1EC3920263B62D2004FF93C /* objcMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391F263B62D2004FF93C /* objcMethods.swift */; };
+		F1EC391D263B60FC004FF93C /* ShulteVC+game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */; };
+		F1EC3920263B62D2004FF93C /* ShulteVC+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */; };
 		F1EC3923263C18D5004FF93C /* TableShulteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3922263C18D5004FF93C /* TableShulteView.swift */; };
+		F491CF9327BF1119008AE6DD /* ShulteVC+layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491CF9227BF1119008AE6DD /* ShulteVC+layout.swift */; };
+		F4AE182727BEBB2F00D3FC54 /* SegmentedSizeChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */; };
+		F4AE182B27BEFD4A00D3FC54 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */; };
+		F4AE182D27BF036800D3FC54 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182C27BF036800D3FC54 /* LayoutManager.swift */; };
+		F4AE182F27BF068500D3FC54 /* LabelShulte.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182E27BF068500D3FC54 /* LabelShulte.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +39,21 @@
 		F184ACEF251079E200C9FCA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F184ACF2251079E200C9FCA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F184ACF4251079E200C9FCA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1EC3902263AADB9004FF93C /* makeTableShulte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeTableShulte.swift; sourceTree = "<group>"; };
-		F1EC3906263AB19F004FF93C /* makeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeButtons.swift; sourceTree = "<group>"; };
+		F1EC3902263AADB9004FF93C /* ShulteVC+makeTableShulte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+makeTableShulte.swift"; sourceTree = "<group>"; };
+		F1EC3906263AB19F004FF93C /* ShulteVC+makeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+makeButtons.swift"; sourceTree = "<group>"; };
 		F1EC390B263AC172004FF93C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F1EC390E263AC2AB004FF93C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		F1EC3911263AC466004FF93C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		F1EC3914263AC4E6004FF93C /* trash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trash.swift; sourceTree = "<group>"; };
 		F1EC3917263AC619004FF93C /* RoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
-		F1EC391C263B60FC004FF93C /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
-		F1EC391F263B62D2004FF93C /* objcMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objcMethods.swift; sourceTree = "<group>"; };
+		F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+game.swift"; sourceTree = "<group>"; };
+		F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+objc.swift"; sourceTree = "<group>"; };
 		F1EC3922263C18D5004FF93C /* TableShulteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShulteView.swift; sourceTree = "<group>"; };
+		F491CF9227BF1119008AE6DD /* ShulteVC+layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+layout.swift"; sourceTree = "<group>"; };
+		F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedSizeChoise.swift; sourceTree = "<group>"; };
+		F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		F4AE182C27BF036800D3FC54 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		F4AE182E27BF068500D3FC54 /* LabelShulte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelShulte.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +86,8 @@
 		F184ACE2251079E100C9FCA6 /* Shulte */ = {
 			isa = PBXGroup;
 			children = (
-				F1EC390A263ABFCB004FF93C /* ShulteVC */,
+				F4AE182927BEFD1600D3FC54 /* ModelView */,
+				F4AE182827BEC85200D3FC54 /* View */,
 				F184ACE3251079E100C9FCA6 /* AppDelegate.swift */,
 				F184ACE5251079E100C9FCA6 /* SceneDelegate.swift */,
 				F1EC3914263AC4E6004FF93C /* trash.swift */,
@@ -92,11 +103,14 @@
 			isa = PBXGroup;
 			children = (
 				F184ACE7251079E100C9FCA6 /* ShulteVC.swift */,
-				F1EC391C263B60FC004FF93C /* game.swift */,
-				F1EC3902263AADB9004FF93C /* makeTableShulte.swift */,
-				F1EC3906263AB19F004FF93C /* makeButtons.swift */,
-				F1EC391F263B62D2004FF93C /* objcMethods.swift */,
-				F1EC391A263B3C2D004FF93C /* Custom */,
+				F491CF9227BF1119008AE6DD /* ShulteVC+layout.swift */,
+				F1EC3922263C18D5004FF93C /* TableShulteView.swift */,
+				F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */,
+				F1EC3902263AADB9004FF93C /* ShulteVC+makeTableShulte.swift */,
+				F1EC3906263AB19F004FF93C /* ShulteVC+makeButtons.swift */,
+				F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */,
+				F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */,
+				F4AE182E27BF068500D3FC54 /* LabelShulte.swift */,
 			);
 			name = ShulteVC;
 			sourceTree = "<group>";
@@ -108,9 +122,26 @@
 				F1EC390E263AC2AB004FF93C /* RoundedButton.swift */,
 				F1EC3911263AC466004FF93C /* CustomLabel.swift */,
 				F1EC3917263AC619004FF93C /* RoundedLabel.swift */,
-				F1EC3922263C18D5004FF93C /* TableShulteView.swift */,
 			);
 			name = Custom;
+			sourceTree = "<group>";
+		};
+		F4AE182827BEC85200D3FC54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1EC390A263ABFCB004FF93C /* ShulteVC */,
+				F1EC391A263B3C2D004FF93C /* Custom */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F4AE182927BEFD1600D3FC54 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */,
+				F4AE182C27BF036800D3FC54 /* LayoutManager.swift */,
+			);
+			name = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,18 +215,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EC3923263C18D5004FF93C /* TableShulteView.swift in Sources */,
+				F4AE182F27BF068500D3FC54 /* LabelShulte.swift in Sources */,
 				F1EC3915263AC4E6004FF93C /* trash.swift in Sources */,
 				F184ACEE251079E100C9FCA6 /* Shulte.xcdatamodeld in Sources */,
+				F4AE182D27BF036800D3FC54 /* LayoutManager.swift in Sources */,
 				F1EC3912263AC466004FF93C /* CustomLabel.swift in Sources */,
-				F1EC391D263B60FC004FF93C /* game.swift in Sources */,
+				F1EC391D263B60FC004FF93C /* ShulteVC+game.swift in Sources */,
+				F491CF9327BF1119008AE6DD /* ShulteVC+layout.swift in Sources */,
+				F4AE182B27BEFD4A00D3FC54 /* GameModel.swift in Sources */,
 				F184ACE8251079E100C9FCA6 /* ShulteVC.swift in Sources */,
-				F1EC3920263B62D2004FF93C /* objcMethods.swift in Sources */,
+				F1EC3920263B62D2004FF93C /* ShulteVC+objc.swift in Sources */,
 				F184ACE4251079E100C9FCA6 /* AppDelegate.swift in Sources */,
 				F1EC390F263AC2AB004FF93C /* RoundedButton.swift in Sources */,
 				F1EC3918263AC619004FF93C /* RoundedLabel.swift in Sources */,
-				F1EC3907263AB19F004FF93C /* makeButtons.swift in Sources */,
+				F1EC3907263AB19F004FF93C /* ShulteVC+makeButtons.swift in Sources */,
 				F1EC390C263AC172004FF93C /* CustomButton.swift in Sources */,
-				F1EC3903263AADB9004FF93C /* makeTableShulte.swift in Sources */,
+				F1EC3903263AADB9004FF93C /* ShulteVC+makeTableShulte.swift in Sources */,
+				F4AE182727BEBB2F00D3FC54 /* SegmentedSizeChoise.swift in Sources */,
 				F184ACE6251079E100C9FCA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

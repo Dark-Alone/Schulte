@@ -10,12 +10,14 @@ import UIKit
 
 class CustomButton: UIButton {
     
-    required init() {
+    init(title: String = "") {
         super.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = .white
         self.setTitleColor(.black, for: .normal)
         self.setTitleColor(.gray, for: .disabled)
+        
+        self.setTitle(title, for: .normal)
     }
     
     required init?(coder: NSCoder) {

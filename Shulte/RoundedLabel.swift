@@ -10,8 +10,9 @@ import UIKit
 
 class RoundedLabel: CustomLabel {
     
-    required init() {
-        super.init()
+    override init(title: String, font: UIFont = .preferredFont(forTextStyle: .body)) {
+        super.init(title: title, font: font)
+        
         self.clipsToBounds = true
         self.layer.cornerRadius = 10
         self.layer.shadowRadius = 0
