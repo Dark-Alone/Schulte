@@ -23,7 +23,6 @@
 		F1EC391D263B60FC004FF93C /* ShulteVC+game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */; };
 		F1EC3920263B62D2004FF93C /* ShulteVC+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */; };
 		F1EC3923263C18D5004FF93C /* TableShulteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3922263C18D5004FF93C /* TableShulteView.swift */; };
-		F491CF9327BF1119008AE6DD /* ShulteVC+layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491CF9227BF1119008AE6DD /* ShulteVC+layout.swift */; };
 		F4AE182727BEBB2F00D3FC54 /* SegmentedSizeChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */; };
 		F4AE182B27BEFD4A00D3FC54 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */; };
 		F4AE182D27BF036800D3FC54 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182C27BF036800D3FC54 /* LayoutManager.swift */; };
@@ -49,7 +48,6 @@
 		F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+game.swift"; sourceTree = "<group>"; };
 		F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+objc.swift"; sourceTree = "<group>"; };
 		F1EC3922263C18D5004FF93C /* TableShulteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShulteView.swift; sourceTree = "<group>"; };
-		F491CF9227BF1119008AE6DD /* ShulteVC+layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+layout.swift"; sourceTree = "<group>"; };
 		F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedSizeChoise.swift; sourceTree = "<group>"; };
 		F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		F4AE182C27BF036800D3FC54 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				F184ACE7251079E100C9FCA6 /* ShulteVC.swift */,
-				F491CF9227BF1119008AE6DD /* ShulteVC+layout.swift */,
 				F1EC3922263C18D5004FF93C /* TableShulteView.swift */,
 				F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */,
 				F1EC3902263AADB9004FF93C /* ShulteVC+makeTableShulte.swift */,
@@ -221,7 +218,6 @@
 				F4AE182D27BF036800D3FC54 /* LayoutManager.swift in Sources */,
 				F1EC3912263AC466004FF93C /* CustomLabel.swift in Sources */,
 				F1EC391D263B60FC004FF93C /* ShulteVC+game.swift in Sources */,
-				F491CF9327BF1119008AE6DD /* ShulteVC+layout.swift in Sources */,
 				F4AE182B27BEFD4A00D3FC54 /* GameModel.swift in Sources */,
 				F184ACE8251079E100C9FCA6 /* ShulteVC.swift in Sources */,
 				F1EC3920263B62D2004FF93C /* ShulteVC+objc.swift in Sources */,
