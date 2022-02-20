@@ -29,8 +29,10 @@ extension ShulteVC {
         
         for i in 0 ..< (gameModel.dimension * gameModel.dimension) {
             let button = generateButton()
+            
             let widthConstraint = button.widthAnchor.constraint(equalToConstant: size)
             let heightConstraint = button.heightAnchor.constraint(equalToConstant: size)
+            
             let leadingConstraint: NSLayoutConstraint
             let topConstraint: NSLayoutConstraint
             

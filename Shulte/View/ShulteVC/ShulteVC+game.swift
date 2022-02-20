@@ -10,6 +10,7 @@ import UIKit
 
 
 extension ShulteVC {
+    
     // TODO: Remove junk
     func generateNewTable() {
         if gameModel.dimensionChanged {
@@ -57,15 +58,13 @@ extension ShulteVC {
     func gameEnd(isFast: Bool = false) {
         tableShulte.segmentedShulte.isEnabled = true
         
-        gameModel.onGame = false
+        // try to change functions order
         rehideLabels(0) // without animation
+        
         tableShulte.startButton.isEnabled = true
         
         fastEndButton?.isEnabled = false
         fastEndButton?.isHidden = true
-        
-        // ??
-        gameModel.currentNumber = 1
         
         changeLabelShulteText(text: "-")
         
@@ -80,7 +79,7 @@ extension ShulteVC {
             self.tableShulte.alpha = 1
         }) { (_) in}
         
-        // ??
+        // make replayable game
         gameModel.currentNumber = 1
     }
 }

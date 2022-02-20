@@ -23,6 +23,7 @@
 		F1EC391D263B60FC004FF93C /* ShulteVC+game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */; };
 		F1EC3920263B62D2004FF93C /* ShulteVC+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */; };
 		F1EC3923263C18D5004FF93C /* TableShulteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EC3922263C18D5004FF93C /* TableShulteView.swift */; };
+		F479390827C29F5C003C3972 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479390727C29F5C003C3972 /* PersistenceController.swift */; };
 		F4AE182727BEBB2F00D3FC54 /* SegmentedSizeChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */; };
 		F4AE182B27BEFD4A00D3FC54 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */; };
 		F4AE182D27BF036800D3FC54 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE182C27BF036800D3FC54 /* LayoutManager.swift */; };
@@ -48,6 +49,7 @@
 		F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+game.swift"; sourceTree = "<group>"; };
 		F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShulteVC+objc.swift"; sourceTree = "<group>"; };
 		F1EC3922263C18D5004FF93C /* TableShulteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShulteView.swift; sourceTree = "<group>"; };
+		F479390727C29F5C003C3972 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedSizeChoise.swift; sourceTree = "<group>"; };
 		F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		F4AE182C27BF036800D3FC54 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
@@ -84,8 +86,9 @@
 		F184ACE2251079E100C9FCA6 /* Shulte */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE182927BEFD1600D3FC54 /* ModelView */,
-				F4AE182827BEC85200D3FC54 /* View */,
+				F479390227C2946D003C3972 /* View */,
+				F479390127C29459003C3972 /* ViewModel */,
+				F479390627C29F38003C3972 /* Model */,
 				F184ACE3251079E100C9FCA6 /* AppDelegate.swift */,
 				F184ACE5251079E100C9FCA6 /* SceneDelegate.swift */,
 				F1EC3914263AC4E6004FF93C /* trash.swift */,
@@ -97,7 +100,25 @@
 			path = Shulte;
 			sourceTree = "<group>";
 		};
-		F1EC390A263ABFCB004FF93C /* ShulteVC */ = {
+		F479390127C29459003C3972 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */,
+				F4AE182C27BF036800D3FC54 /* LayoutManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F479390227C2946D003C3972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F479390527C29497003C3972 /* Custom */,
+				F479390427C2947C003C3972 /* ShulteVC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F479390427C2947C003C3972 /* ShulteVC */ = {
 			isa = PBXGroup;
 			children = (
 				F184ACE7251079E100C9FCA6 /* ShulteVC.swift */,
@@ -109,10 +130,10 @@
 				F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */,
 				F4AE182E27BF068500D3FC54 /* LabelShulte.swift */,
 			);
-			name = ShulteVC;
+			path = ShulteVC;
 			sourceTree = "<group>";
 		};
-		F1EC391A263B3C2D004FF93C /* Custom */ = {
+		F479390527C29497003C3972 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				F1EC390B263AC172004FF93C /* CustomButton.swift */,
@@ -120,25 +141,15 @@
 				F1EC3911263AC466004FF93C /* CustomLabel.swift */,
 				F1EC3917263AC619004FF93C /* RoundedLabel.swift */,
 			);
-			name = Custom;
+			path = Custom;
 			sourceTree = "<group>";
 		};
-		F4AE182827BEC85200D3FC54 /* View */ = {
+		F479390627C29F38003C3972 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F1EC390A263ABFCB004FF93C /* ShulteVC */,
-				F1EC391A263B3C2D004FF93C /* Custom */,
+				F479390727C29F5C003C3972 /* PersistenceController.swift */,
 			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		F4AE182927BEFD1600D3FC54 /* ModelView */ = {
-			isa = PBXGroup;
-			children = (
-				F4AE182A27BEFD4A00D3FC54 /* GameModel.swift */,
-				F4AE182C27BF036800D3FC54 /* LayoutManager.swift */,
-			);
-			name = ModelView;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				F1EC3923263C18D5004FF93C /* TableShulteView.swift in Sources */,
 				F4AE182F27BF068500D3FC54 /* LabelShulte.swift in Sources */,
+				F479390827C29F5C003C3972 /* PersistenceController.swift in Sources */,
 				F1EC3915263AC4E6004FF93C /* trash.swift in Sources */,
 				F184ACEE251079E100C9FCA6 /* Shulte.xcdatamodeld in Sources */,
 				F4AE182D27BF036800D3FC54 /* LayoutManager.swift in Sources */,

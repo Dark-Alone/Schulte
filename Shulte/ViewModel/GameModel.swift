@@ -9,8 +9,8 @@
 import UIKit
 
 class GameModel {
-    
     // variable shows current game status
+    // changes in rehideLabels in ShulteVC
     var onGame = false
     
     // Variables for calculation game time

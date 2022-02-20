@@ -57,7 +57,10 @@ extension ShulteVC {
     @objc func touchButton(sender: UIButton) {
         gameModel.touches += 1
         
-        if String(gameModel.currentNumber) == sender.titleLabel?.text {
+        // for reuse
+        let senderText = sender.titleLabel?.text
+        
+        if String(gameModel.currentNumber) == senderText {
             gameModel.currentNumber += 1
             changeLabelShulteText(text: "\(gameModel.currentNumber)")
             
@@ -74,6 +77,9 @@ extension ShulteVC {
             if gameModel.currentNumber > (gameModel.dimension * gameModel.dimension) {
                 gameEnd()
             }
+        } else {
+            // TODO: save the missclick information
+            
         }
     }
     

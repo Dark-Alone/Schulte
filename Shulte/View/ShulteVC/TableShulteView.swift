@@ -11,15 +11,19 @@ import UIKit
 class TableShulteView: UIView {
     let startButton: UIButton = RoundedButton(title: "Start", font: .preferredFont(forTextStyle: .body))
     
+    // TODO: Rename countdown on gameResults labels
+    // last game results label
     let countdownTimerDescriptionLabel: UILabel = RoundedLabel(title: "Time", font: .systemFont(ofSize: 17))
     let countdownTimerLabel: UILabel = CustomLabel(title: "-", font: .systemFont(ofSize: 17))
     
-    
+    // record game results label
     let recordDescriptionLabel: UILabel = CustomLabel(title: "Record", font: .systemFont(ofSize: 14))
     let recordLabel: UILabel = RoundedLabel(title: "-", font: .systemFont(ofSize: 14))
     
+    // countdown at the start of game label
     let startLabel: UILabel = RoundedLabel(title: "", font: .systemFont(ofSize: 25))
     
+    // segment to choose size for game table (5x5 etc.)
     let segmentedShulte: UISegmentedControl = SegmentedSizeChoise(items: ["5", "6", "7", "8"])
     
     init() {
@@ -32,7 +36,9 @@ class TableShulteView: UIView {
         
         self.addSubviews()
         
-        // recordLabel
+        
+        // labels masked cordners
+        countdownTimerDescriptionLabel.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         recordLabel.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     }
     
@@ -56,7 +62,6 @@ class TableShulteView: UIView {
         countdownTimerDescriptionLabel.alpha = show
         recordLabel.alpha = show
         recordDescriptionLabel.alpha = show
-        startLabel.alpha = abs(show)
     }
 }
 
@@ -96,6 +101,7 @@ extension TableShulteView {
         recordLabel.widthAnchor.constraint(equalToConstant: countdownTimersWidth).isActive = true
         recordLabel.heightAnchor.constraint(equalToConstant: recordLabelHeight).isActive = true
         
+        // startLabel overlays other labels
         startLabel.topAnchor.constraint(equalTo: countdownTimerDescriptionLabel.topAnchor).isActive = true
         startLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         startLabel.widthAnchor.constraint(equalTo: recordLabel.widthAnchor).isActive = true

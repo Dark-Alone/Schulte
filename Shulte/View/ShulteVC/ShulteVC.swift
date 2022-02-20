@@ -46,7 +46,7 @@ class ShulteVC: UIViewController {
         addTargertToButtons()
         specifySubviews()
         
-        // only if app is testing
+        // only if testing app
         if testApp {
             makeFastEndButton()
         }
@@ -87,13 +87,24 @@ class ShulteVC: UIViewController {
     
     func rehideLabels(_ duration: TimeInterval = 0.5) {
         let show = gameModel.onGame ? 1 : 0
-        gameModel.onGame.toggle()
-//        self.startLabel.isHidden = self.isHidden
+        // try to delete this line
+        self.gameModel.onGame.toggle()
         
         UIView.animate(withDuration: duration, delay: 0, options: []) {
+            // TEST: try to bring startlabel on top
+            if self.gameModel.onGame {
+                print("show startLabel")
+                self.tableShulte.startLabel.isHidden = false
+                self.tableShulte.bringSubviewToFront(self.tableShulte.startLabel)
+            } else {
+                print("hide startLabel")
+                self.tableShulte.startLabel.isHidden = true
+            }
             self.tableShulte.showLabels(show: CGFloat(show))
             self.labelShulte.alpha = CGFloat(abs(show - 1))
-        } completion: { (_) in }
+        } completion: { (_) in
+            
+        }
     }
     
     
