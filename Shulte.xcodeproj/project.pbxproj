@@ -123,10 +123,10 @@
 			children = (
 				F184ACE7251079E100C9FCA6 /* ShulteVC.swift */,
 				F1EC3922263C18D5004FF93C /* TableShulteView.swift */,
+				F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */,
 				F1EC391C263B60FC004FF93C /* ShulteVC+game.swift */,
 				F1EC3902263AADB9004FF93C /* ShulteVC+makeTableShulte.swift */,
 				F1EC3906263AB19F004FF93C /* ShulteVC+makeButtons.swift */,
-				F1EC391F263B62D2004FF93C /* ShulteVC+objc.swift */,
 				F4AE182627BEBB2F00D3FC54 /* SegmentedSizeChoise.swift */,
 				F4AE182E27BF068500D3FC54 /* LabelShulte.swift */,
 			);

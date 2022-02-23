@@ -36,6 +36,9 @@ class TableShulteView: UIView {
         
         self.addSubviews()
         
+        // hide 
+        self.startLabel.isHidden = true
+        
         
         // labels masked cordners
         countdownTimerDescriptionLabel.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
@@ -118,5 +121,8 @@ extension TableShulteView {
         segmentedShulte.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         segmentedShulte.heightAnchor.constraint(equalToConstant: sAW / 12).isActive = true
         segmentedShulte.widthAnchor.constraint(equalToConstant: sAW / 3).isActive = true
+        
+        // overlay startLabel over other labels
+        self.bringSubviewToFront(startLabel)
     }
 }

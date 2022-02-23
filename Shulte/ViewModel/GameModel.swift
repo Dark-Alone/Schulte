@@ -8,6 +8,7 @@
 
 import UIKit
 
+// TODO: create GameManager
 class GameModel {
     // variable shows current game status
     // changes in rehideLabels in ShulteVC
@@ -33,9 +34,10 @@ class GameModel {
     // ???
     weak var layoutManager: LayoutManager?
     
-    func endTheGame() -> Float {
+    // TODO: add functional from game
+    func endTheGame() -> Double {
         endTime = Date()
         
-        return Float(endTime.timeIntervalSince(startTime))
+        return Double(endTime.timeIntervalSince(startTime))
     }
 }

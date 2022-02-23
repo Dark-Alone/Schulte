@@ -10,7 +10,7 @@ import UIKit
 
 class ShulteVC: UIViewController {
     // setup test mode
-    let testApp = true
+    let testApp = false
     
     // timer for countdown before game starts
     var countdownTimer: Timer?
@@ -19,6 +19,9 @@ class ShulteVC: UIViewController {
     // Setup view models
     var gameModel = GameModel()
     var layoutManager = LayoutManager()
+    
+    // label showed at top
+    let topLabel = CustomLabel(title: "Schulte Table", font: .systemFont(ofSize: 33, weight: .semibold))
     
     // overlay view to show game results and for start new game
     let tableShulte = TableShulteView()
@@ -35,6 +38,8 @@ class ShulteVC: UIViewController {
         let safeArea = view.safeAreaLayoutGuide
         layoutManager.sAW = safeArea.layoutFrame.width
         layoutManager.sAH = safeArea.layoutFrame.height
+        
+        makeTopLabel()
         
         view.backgroundColor = UIColor(white: 0.9, alpha: 1)
         
@@ -63,6 +68,14 @@ class ShulteVC: UIViewController {
         labelShulte.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
     
+    func makeTopLabel() {
+        let safeArea = view.safeAreaLayoutGuide
+        view.addSubview(topLabel)
+        
+        topLabel.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor).isActive = true
+        topLabel.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 12).isActive = true
+    }
+    
     
     func addTargertToButtons() {
         tableShulte.startButton.addTarget(self, action: #selector(touchStart), for: .touchDown)
@@ -87,27 +100,13 @@ class ShulteVC: UIViewController {
     
     func rehideLabels(_ duration: TimeInterval = 0.5) {
         let show = gameModel.onGame ? 1 : 0
-        // try to delete this line
+        
         self.gameModel.onGame.toggle()
         
         UIView.animate(withDuration: duration, delay: 0, options: []) {
-            // TEST: try to bring startlabel on top
-            if self.gameModel.onGame {
-                print("show startLabel")
-                self.tableShulte.startLabel.isHidden = false
-                self.tableShulte.bringSubviewToFront(self.tableShulte.startLabel)
-            } else {
-                print("hide startLabel")
-                self.tableShulte.startLabel.isHidden = true
-            }
+            self.tableShulte.startLabel.isHidden = !self.gameModel.onGame
             self.tableShulte.showLabels(show: CGFloat(show))
             self.labelShulte.alpha = CGFloat(abs(show - 1))
-        } completion: { (_) in
-            
-        }
+        } completion: { (_) in }
     }
-    
-    
-    func breakGame() { }
-    func saveGame() { }
 }

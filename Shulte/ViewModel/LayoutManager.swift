@@ -15,6 +15,7 @@ class LayoutManager {
     // safeAreaWidth
     var sAW: CGFloat = 0
     
+    // game buttons
     var buttons = [UIButton]()
     var buttonsConstraints = [NSLayoutConstraint]()
     

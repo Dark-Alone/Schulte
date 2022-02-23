@@ -30,6 +30,7 @@ extension ShulteVC {
         }
     }
     
+    // game starts after countdown
     func gameStart() {
         generateNewTable()
 
@@ -40,7 +41,9 @@ extension ShulteVC {
         UIView.animate(withDuration: 0.5, animations: {
             self.tableShulte.alpha = 0
         }) { (_) in
+            self.topLabel.isHidden = true
             self.tableShulte.isHidden = true
+            // update startLabel textaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaooaaaaaaaaaa
             self.tableShulte.startLabel.text = ""
             
             self.gameModel.startTime = Date()
@@ -54,7 +57,7 @@ extension ShulteVC {
         tableShulte.countdownTimerLabel.text = String(format: "%.1fs", time)
     }
     
-    // fast end button?
+    // game ends
     func gameEnd(isFast: Bool = false) {
         tableShulte.segmentedShulte.isEnabled = true
         
@@ -75,6 +78,7 @@ extension ShulteVC {
         }
         
         UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
+            self.topLabel.isHidden = false
             self.tableShulte.isHidden = false
             self.tableShulte.alpha = 1
         }) { (_) in}

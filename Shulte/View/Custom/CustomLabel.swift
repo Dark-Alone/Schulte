@@ -19,6 +19,7 @@ class CustomLabel: UILabel {
         self.textAlignment = .center
         
         self.text = title
+        self.font = font
     }
     
     required init?(coder: NSCoder) {
